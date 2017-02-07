@@ -153,10 +153,3 @@ if __name__ == "__main__":
 		sys.exit()
 	main(sys.argv[1:])
 
-
-#binstr=open("duck.hex","r").read()
-
-# three runs, initial delay 3 seconds, 10 seconds between each run
-#print generate_source(binstr, init_delay=2000, loop_count=-1, loop_delay=10000)
-
-#print generate_source(binstr, init_delay=10000, loop_count=3, loop_delay=1000)
