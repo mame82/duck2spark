@@ -1,7 +1,7 @@
 REM Test for ASCII output
 REM
 REM The test string is used with a German keyboard layout and thus prepends a space behind '^' and '`'
-REM in order to deal with DEADKEYS. The Stering should be print 2 times.
+REM in order to deal with DEADKEYS. The sting should be printed 2 times if the REPEAT statement works.
 REM
 STRING  !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^ _` abcdefghijklmnopqrstuvwxyz{|}~
 REPEAT 2
