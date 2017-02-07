@@ -55,7 +55,7 @@ Usage
 	
 	duck2spark.py -i raw.bin -l 1 -f 2000 -o sketch.c
 
-#. After setting up the Arduino IDE load the example "DigisparkKeyboard" and replace the Sketch source by the one saved to sketch.c.
+#. After setting up the Arduino IDE load the example "DigisparkKeyboard" and replace the Sketch source by the one saved to ``sketch.c`` .
 
 To get help on duck2spark.py run ``duck2spark.py -h``
 
