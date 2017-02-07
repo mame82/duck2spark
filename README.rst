@@ -16,7 +16,7 @@ Additional features
 * Option to repeat payload execution (counted loop, single run, endless run)
 * Option to blink status LED when payload execution is finished (on by default, except endless loop)
 
-.. _Duckncoder: https://github.com/hak5darren/USB-Rubber-Ducky/blob/master/Encoder/encoder.jar
+.. _DuckEncoder: https://github.com/hak5darren/USB-Rubber-Ducky/blob/master/Encoder/encoder.jar
 
 Project files
 =============
