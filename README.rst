@@ -43,7 +43,7 @@ Requirements
 Usage
 =====
 
-#. Generate a DuckyScript ``test.duck``you want to use as output::
+#. Generate a DuckyScript ``test.duck`` you want to use as output::
 
 	echo "STRING Hello World" > test.duck
 
