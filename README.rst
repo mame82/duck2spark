@@ -29,12 +29,15 @@ Project files
 Requirements
 ============
 
-* `Arduino IDE`_ to use to compile and upload the Sketch to DigiSpark (link)
+* `Arduino IDE`_ to compile and upload the generated Sketch to DigiSpark
 * Arduino IDE has to be configured to program a DigiSpark, following this guide_
 * One, two or many DigiSparks ;-)
+* DuckEncoder_ to generate a raw payload from DuckyScript
 
 .. _Arduino IDE: https://www.arduino.cc/en/main/software
 .. _guide: https://digistump.com/wiki/digispark/tutorials/connecting
+.. _DuckEncoder: https://github.com/hak5darren/USB-Rubber-Ducky/blob/master/Encoder/encoder.jar
+
 
 Usage
 =====
