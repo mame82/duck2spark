@@ -65,3 +65,12 @@ Getting started with DuckyScript
 Here's an introduction_ to DuckyScript
 
 .. _introduction: http://usbrubberducky.com/?duckyscript#!duckyscript.md
+
+Additional Hints on using DuckEncoder in conjunction with duck2spark
+--------------------------------------------------------------------
+
+* DuckEncoder has an issue encoding "GUI" or "WINDOWS" key without an additional key. The common scenario on Windows is a key combination like "GUI r", using "GUI" alone would produce an e as output. The issue is adressed `here <https://github.com/hak5darren/USB-Rubber-Ducky/issues/51>`_. As there hopefully will be a patch duck2spark doesn't handle this issue. In fact it isn't possible to distinguish between "GUI" key and "e" key in an already encoded script. An already patched version of Encoder.java could be found `here <https://github.com/mame82/USB-Rubber-Ducky>`_.
+
+* Using long delays in a DuckyScript results in big payloads, as delays longer than 250 milliseconds are split up into multiple delays, with a maximum of 250 milliseconds each. Each of these delays consumes 2 bytes in the final payload. As the memory of digispark is far more limited, it is suggested to use ``duck2spark's`` delay options instead. Duck2spark relies on DigiKeyboard.delay() and is more friendly in terms of memory consumption.
+
+* Using the "PREPEAT <N>" instruction in DuckyScript results in repeating the whole key sequence of the former command and thus consumes <N> times as much memory in the final payload. Again, as Digispark is short on memory, it is suggested to use ``duck2spark's`` loop option whenever possible. Printing out a 10 character string 500 times by using "REPEAT 500" results in a payload 10000 bytes in size, which is to large for Digispark. Encoding a duck script with a single 10 character string consumes 20 bytes and could be combined with ``duck2spark.py -l 500`` to achieve a 500 times repetition without further memory consumption.
