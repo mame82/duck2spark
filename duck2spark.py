@@ -83,8 +83,8 @@ Usage: python duck2spark -i [file ..]			build Sketch from specified RubberDucky 
 
 Arguments:
    -i [file ..] 		Input File (Payload ecnoded with DuckEncoder)
-   -o [file ..] 		Output File for Sketch, if obmitted stdout is used
-   -l <count> 			Loop count (default: single run, -l -1 for endless, -l 3 for 3 times etc.)
+   -o [file ..] 		Output File for Sketch, if omitted stdout is used
+   -l <count> 			Loop count (1=single run (default), -1=endless run, 3=3 runs etc.)
    -f <millis> 			Delay in milliseconds before initial payload run (default 1000)
    -r <millis> 			Delay in milliseconds between loop runs (default 5000)
    -n				Don't blink status LED after finish of payload execution
