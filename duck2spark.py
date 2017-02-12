@@ -72,8 +72,7 @@ void loop()
 
 	return head +declare + init + body + tail
 
-def usage():
-	usagescr='''MaMe82 duck2spark 1.0
+def usage():	usagescr='''MaMe82 duck2spark 1.0
 =====================
 
 Converts payload created by DuckEncoder to sourcefile for DigiSpark Sketch
@@ -119,7 +118,7 @@ def main(argv):
 			if not os.path.isfile(ifile) or not os.access(ifile, os.R_OK):
 				print "Input file "+ ifile +" doesn't exist or isn't readable"
 				sys.exit(2)
-			with open(ifile,"read") as f:
+			with open(ifile,"rb") as f:
 				payload=f.read()
 		elif opt in ("-o", "--output"):
 			ofile=arg
@@ -143,7 +142,7 @@ def main(argv):
 		print result
 	else:
 		# write to ofile
-		with open(ofile,"write") as f:
+		with open(ofile,"w") as f:
 			f.write(result)
 	
 
