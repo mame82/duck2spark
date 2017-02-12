@@ -72,7 +72,8 @@ void loop()
 
 	return head +declare + init + body + tail
 
-def usage():	usagescr='''MaMe82 duck2spark 1.0
+def usage():
+	usagescr='''MaMe82 duck2spark 1.0
 =====================
 
 Converts payload created by DuckEncoder to sourcefile for DigiSpark Sketch
