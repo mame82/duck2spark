@@ -53,7 +53,7 @@ Usage
 
 #. Use duck2spark.py to convert into Arduino Sketch (options for single run, 2 seconds startup delay)::
 	
-	duck2spark.py -i raw.bin -l 1 -f 2000 -o sketch.c
+	duck2spark.py -i raw.bin -l 1 -f 2000 -o sketch.ino
 
 #. After setting up the Arduino IDE load the example "DigisparkKeyboard" and replace the Sketch source by the one saved to ``sketch.c`` .
 
