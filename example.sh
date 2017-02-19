@@ -11,8 +11,8 @@ java -jar encoder.jar -i example.duck -o example.bin -l de
 
 # generate Sketch from example.bin, loop 4 times, initial delay 2,5 seconds
 # delay between loop iterations 3 seconds
-python duck2spark.py -i example.bin -l 4 -f 2500 -r 3000 -o example.c
+python duck2spark.py -i example.bin -l 4 -f 2500 -r 3000 -o example.ino
 
 rm example.bin
 
-echo "Example Sketch saved to: example.c"
+echo "Example Sketch saved to: example.ino"
