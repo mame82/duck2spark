@@ -32,7 +32,7 @@ Requirements
 * `Arduino IDE`_ to compile and upload the generated Sketch to DigiSpark
 * Arduino IDE has to be configured to program a DigiSpark, following this guide_
 * One, two or many DigiSparks ;-)
-* DuckEncoder_ to generate a raw payload from DuckyScript
+* DuckEncoder_ to generate a raw payload from DuckyScript, if you want to stay away from Java use `my python port of DuckEncoder <https://github.com/mame82/duckencoder.py>`_
 * Python 2 installation
 
 .. _Arduino IDE: https://www.arduino.cc/en/main/software
@@ -47,7 +47,7 @@ Usage
 
 	echo "STRING Hello World" > test.duck
 
-#. Compile the script using DuckEncoder with your keyboard layout (de in example)::
+#. Compile the script using DuckEncoder with your keyboard layout (de in example) or use `my python port <https://github.com/mame82/duckencoder.py>`_::
 
 	java -jar encoder.jar -i test.duck -o raw.bin -l de
 
